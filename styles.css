@@ -1382,6 +1382,61 @@ button:hover, button:focus {
 }
 
 /* these media queries only affect the envelope animation on the contact form */
+@media screen and (min-width: 1600px) {
+  .letter {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .side {
+    width: 600px;
+    height: 270px;
+  }
+
+  .side h1 {
+    font-size: 2rem;
+  }
+
+  .form-message {
+    height: 200px;
+  }
+
+  .side * {
+    font-size: 1.3rem;
+  }
+
+  .form-name, .form-email {
+    height: 50px;
+  }
+
+  #send-letter {
+    height: 60px;
+    font-size: 1.7rem;
+  }
+
+  @-webkit-keyframes scaleLetter {
+    66% {transform: translateY(-12rem) scale(0.45, 0.25);}
+    75% {transform: translateY(-12rem) scale(0.35, 0.25);}
+    90% {transform: translateY(-12rem) scale(0.2, 0.25);}
+    97% {transform: translateY(-12rem) scale(0.28, 0.25);}
+    100%{transform: translateY(-12rem) scale(0.25, 0.25);}
+}
+
+  @keyframes scaleLetter {
+    66% {transform: translateY(-12rem) scale(0.45, 0.25);}
+    75% {transform: translateY(-12rem) scale(0.35, 0.25);}
+    90% {transform: translateY(-12rem) scale(0.2, 0.25);}
+    97% {transform: translateY(-12rem) scale(0.28, 0.25);}
+    100%{transform: translateY(-12rem) scale(0.25, 0.25);}
+  }
+
+  .result-message {
+    font-size: 1.8rem;
+  }
+}
+
 @media screen and (max-width: 510px) {
   .side {
     width: 430px;
