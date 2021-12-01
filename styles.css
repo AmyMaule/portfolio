@@ -914,19 +914,21 @@ button:hover, button:focus {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* media queries */
+@media screen and (min-width: 2200px) {
+  .img-right {
+    margin-right: 200px;
+    height: 294px;
+    width: 540px;
+  }
+
+  .multi-section {
+    /* background: linear-gradient(55deg, rgba(18, 1, 65, 0.99) 0%, rgba(20, 1, 70, 0.9), rgba(24, 3, 74, 0.9),rgba(24, 3, 74, 0.9) 50%, */
+    /* rgba(145, 146, 156, 0.4),rgba(26, 5, 76, 0.92), rgba(26, 7, 85, 0.92),rgba(24, 3, 74, 0.95),rgba(24, 3, 74, 0.95)); */
+    background-color: green;
+}
+}
+
 @media screen and (max-width: 1488px) {
     .intro-small {
         font-size: 1.4rem;
