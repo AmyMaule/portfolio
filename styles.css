@@ -1435,6 +1435,11 @@ button:hover, button:focus {
   .result-message {
     font-size: 1.8rem;
   }
+
+  .foot {
+    margin-top: 180px;
+    font-size: 1.2rem;
+  }
 }
 
 @media screen and (max-width: 510px) {
