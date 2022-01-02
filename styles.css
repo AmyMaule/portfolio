@@ -383,6 +383,15 @@ ul {
   }
 }
 
+@media screen and (max-width: 340px) {
+  .img-small img:hover {
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+  }
+}
+
 /* these are necessary because of a bug caused by including bootstrap that doesn't show the hr */
 hr {
     border: 0;
@@ -1398,25 +1407,31 @@ button:hover, button:focus {
 }
 
 @media screen and (max-width: 350px) {
-    .header-top * {
-        font-size: 1.1rem;
-    }
+  .header-top * {
+    font-size: 1.1rem;
+  }
 
-    .intro {
-        font-size: 1.45rem;
-    }
+  .intro {
+    font-size: 1.45rem;
+  }
 
-    .circle-img {
-        margin-top: -55%;
-    }
+  .circle-img {
+    margin-top: -55%;
+  }
 
-    .block-text {
-        margin-top: 100%;
-    }
+  .block-text {
+    margin-top: 100%;
+  }
 
-    .reddit-subcomment {
-      padding: 0 0.8rem;
-    }
+  .reddit-subcomment {
+    padding: 0 0.8rem;
+  }
+
+  .proj-button {
+    /* font-size: 1rem; */
+    letter-spacing: 0.5px;
+    min-width: 100px;
+  }
 
 }
 
