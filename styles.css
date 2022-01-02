@@ -136,8 +136,6 @@ body {
     right: 0;
     margin-right: 4vw;
     margin-left: auto;
-    /* background: linear-gradient(-45deg, #e2e2e22f, #6240f71c, #13042241); */
-    /* background: linear-gradient(-12deg, #13042221, #13042221, #4932b170, #7e64f3a2, #13042221, #1d063318); */
     background: linear-gradient(-10deg, rgba(10, 10, 60, 0.1) 0%, rgba(10, 10, 60, 0.1) 34%, #4932b170 38%, #4932b170 40%, #225daa9d 45%, #4932b170 50%, #4932b18e 53%, rgba(10, 10, 60, 0.1) 56%, rgba(10, 10, 60, 0.1) 100%);
     border-radius: 5px 15px 5px 15px;
     height: 245px;
@@ -282,7 +280,6 @@ ul {
     -ms-transition: all 0.4s ease-in-out;
 }
 
-
 @media screen and (max-width: 1230px) {
   .img-small img:hover {
     -webkit-transform: scale(1.3);
@@ -405,6 +402,20 @@ hr {
     margin-right: auto;
     height: 300px;
     border-radius: 3px;
+}
+
+.reddit-subcomment-container {
+  margin-top: -4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.reddit-subcomment {
+  background-color: rgba(9, 5, 46, 0.8);
+  height: 20px;
+  font-size: 0.7rem;
+  width: 80%;
+  text-align: center;
 }
 
 .top {
@@ -813,6 +824,10 @@ button:hover, button:focus {
     width: 75%;
   }
 
+  .reddit-subcomment {
+    width: 75%;
+  }
+
   .order-last {
     padding-left: 0;
   }
@@ -967,6 +982,10 @@ button:hover, button:focus {
 
     .img-wrapper {
         width: 90%;
+    }
+
+    .reddit-subcomment {
+      width: 90%;
     }
 
     .wrapper-small {
@@ -1140,10 +1159,6 @@ button:hover, button:focus {
     }
 
     .img-wrapper {
-        height: 270px;
-    }
-
-    .img-wrapper {
         height: 400px;
     }
 
@@ -1173,9 +1188,10 @@ button:hover, button:focus {
         background: linear-gradient(70deg, rgba(18, 1, 65, 0.99) 0%, rgba(20, 1, 70, 0.9), rgba(24, 3, 74, 0.9),rgba(24, 3, 74, 0.9) 50%,
         rgba(145, 146, 156, 0.4),rgba(26, 5, 76, 0.92), rgba(26, 7, 85, 0.92),rgba(24, 3, 74, 0.95),rgba(24, 3, 74, 0.95));
     }
-    .img-wrapper {
+
+    /* .img-wrapper {
       height: 320px;
-    }
+    } */
 }
 
 
@@ -1313,6 +1329,12 @@ button:hover, button:focus {
         background: linear-gradient(78deg, rgba(18, 1, 65, 0.99) 0%, rgba(20, 1, 70, 0.9), rgba(24, 3, 74, 0.9),rgba(24, 3, 74, 0.9) 50%,
         rgba(145, 146, 156, 0.4),rgba(26, 5, 76, 0.92), rgba(26, 7, 85, 0.92),rgba(24, 3, 74, 0.95),rgba(24, 3, 74, 0.95));
     }
+
+    .reddit-subcomment {
+      font-size: 0.6rem;
+      height: 40px;
+      padding-top: 10px;
+    }
 }
 
 @media screen and (max-width: 510px) {
@@ -1329,6 +1351,12 @@ button:hover, button:focus {
         padding-left: 2rem;
         padding-right: 2rem;
     }
+}
+
+@media screen and (max-width: 486px) {
+  .reddit-subcomment {
+    padding: 0 4rem;
+  }
 }
 
 @media screen and (max-width: 440px) {
@@ -1363,20 +1391,31 @@ button:hover, button:focus {
         background: linear-gradient(76deg, rgba(18, 1, 65, 0.99) 0%, rgba(20, 1, 70, 0.9), rgba(24, 3, 74, 0.9),rgba(24, 3, 74, 0.9) 55%,
         rgba(117, 118, 126, 0.4),rgba(26, 5, 76, 0.92), rgba(26, 7, 85, 0.92),rgba(24, 3, 74, 0.95),rgba(24, 3, 74, 0.95));
     }
+
+    .reddit-subcomment {
+      padding: 0 1.5rem;
+    }
 }
 
 @media screen and (max-width: 350px) {
     .header-top * {
         font-size: 1.1rem;
     }
+
     .intro {
         font-size: 1.45rem;
     }
+
     .circle-img {
         margin-top: -55%;
     }
+
     .block-text {
         margin-top: 100%;
+    }
+
+    .reddit-subcomment {
+      padding: 0 0.8rem;
     }
 
 }
