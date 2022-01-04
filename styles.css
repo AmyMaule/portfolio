@@ -188,8 +188,8 @@ body {
 /* this styles the about and porfolio sections */
 .multi-section {
     width: 100%;
-    background: linear-gradient(50deg, rgba(18, 1, 65, 0.96) 0%, rgba(20, 1, 70, 0.9), rgba(24, 3, 74, 0.9),rgba(24, 3, 74, 0.9) 50%,
-    rgba(145, 146, 156, 0.4),rgba(26, 5, 76, 0.92), rgba(26, 7, 85, 0.92),rgba(24, 3, 74, 0.95),rgba(24, 3, 74, 0.9));
+    background: linear-gradient(50deg, rgba(18, 1, 65, 0.93) 0%, rgba(20, 1, 70, 0.9), rgba(24, 3, 74, 0.9),rgba(24, 3, 74, 0.9) 50%,
+    rgba(145, 146, 156, 0.4),rgba(26, 5, 76, 0.92), rgba(26, 7, 85, 0.92),rgba(24, 3, 74, 0.93),rgba(24, 3, 74, 0.9));
     padding-bottom: 8rem;
     position: relative;
 }
