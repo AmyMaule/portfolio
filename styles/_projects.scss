@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #eee2e2;
   gap: 10rem;
   width: 100%;
   padding: 6rem;
@@ -16,13 +17,14 @@
   color: black;
   width: 100%;
   text-align: left;
+  z-index: 5;
 
   &::after {
     position: absolute;
     content: "";
     width: 12rem;
     height: 1.5rem;
-    background-color: #f9e374;
+    background-color: #ede09f;
     bottom: 0.25rem;
     left: 0.75rem;
     z-index: -1;
@@ -40,6 +42,7 @@
   max-width: 66rem;
   background-color: #ffffff;
   box-shadow: 10px 10px 70px 0px rgba(0, 0, 0, 0.2);
+  
   padding: 1.5rem;
   transition: all 300ms ease;
   -webkit-transition: all 300ms ease;
@@ -57,53 +60,21 @@
     -webkit-transition: all 300ms ease;
   }
 
-  &:nth-of-type(even) {
-    &::after {
-      top: 0;
-      right: unset;
-      left: 0;
-    }
-
-    .project-inner-container {
-      flex-flow: row-reverse;
-    }
-
-    .project-img-container {
-      position: relative;
-      left: -1rem;
-      right: -1rem;
-    }
-  }
-
   &:hover {
-    box-shadow: 10px 10px 100px 0px rgba(0, 0, 0, 0.3);
-  
+    box-shadow: 
+      rgba(125, 125, 125, 0.4) 0px 2px 4px, 
+      rgba(98, 98, 98, 0.3) 0px 7px 13px -3px, 
+      rgba(86, 86, 86, 0.1) 0px -1px 0px inset;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+
     .project-img-container {
       transform: scale(1.02);
-      box-shadow: 
-      rgba(59, 175, 169, 0.35) 4px 4px, 
-      rgba(59, 175, 169, 0.3) 8px 8px, 
-      rgba(59, 175, 169, 0.2) 12px 12px, 
-      rgba(59, 175, 169, 0.1) 16px 16px, 
-      rgba(59, 175, 169, 0.05) 20px 20px;
       transition: all 300ms ease;
+      -webkit-transition: all 300ms ease;
       z-index: 30;
     }
-
-    &:nth-of-type(even) {
-      .project-img-container {
-        box-shadow: 
-        rgba(59, 175, 169, 0.35) -4px 4px, 
-        rgba(59, 175, 169, 0.3) -8px 8px, 
-        rgba(59, 175, 169, 0.2) -12px 12px, 
-        rgba(59, 175, 169, 0.1) -16px 16px, 
-        rgba(59, 175, 169, 0.05) -20px 20px;
-      }
-    }
-    // transform: scale(1.02);
-    transition: all 300ms ease;
-    // box-shadow: none;
-
+  
     .project-img {
       display: none;
     }
@@ -127,21 +98,13 @@
   left: 1rem;
   top: -4rem;
   width: 33rem;
-  -webkit-box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
+  box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
   z-index: 30;
-}
-
-.project-container {
-  &:nth-of-type(even) {
-    .project-img-container {
-      -webkit-box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.2);
-      box-shadow: -10px 10px 30px 0px rgba(0, 0, 0, 0.2);
-    }
-  }
 }
 
 .project-img {
@@ -156,13 +119,6 @@
 
 .project-img-gif {
   display: none;
-  position: relative;
-  width: 100%;
-  height: auto;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 
 .project-title-container {
@@ -172,7 +128,7 @@
   // ensure it grows and shrinks between min and max width as screen shrinks
   flex: 1;
   height: fit-content;
-  max-width: 20rem;
+  max-width: 23rem;
   min-width: 13rem;
   z-index: 10;
 }
@@ -185,6 +141,7 @@
 }
 
 .project-hr {
+  // set default border color, later select colors specific to each project
   border-top: 2px solid #e6dddd;
   z-index: 10;
 }
@@ -221,9 +178,6 @@
   margin-top: 1.5rem;
 }
 
-// transition: 300ms all ease;
-// -webkit-transition: 300ms all ease;
-
 .project-btn {
   position: relative;
   font-family: "Roboto Slab", serif;
@@ -237,8 +191,8 @@
   -webkit-transition: 300ms all ease;
   padding: 0.5rem 0;
 
-    &::after,
-    &::before {
+    &::before,
+    &::after {
       content: "";
       display: block;
       position: absolute;
@@ -246,13 +200,7 @@
       height: 20%;
       border: 2px solid #e6dddd;
       transition: all 600ms ease;
-    }
-
-    &::after {
-      border-top-color: transparent;
-      border-left-color: transparent;
-      bottom: 0;
-      right: 0;
+      -webkit-transition: all 600ms ease;
     }
 
     &::before {
@@ -262,13 +210,88 @@
       left: 0;
     }
 
+    &::after {
+      border-top-color: transparent;
+      border-left-color: transparent;
+      bottom: 0;
+      right: 0;
+    }
+
     &:hover {
       background-color: transparent;
 
-      &::after,
-      &::before {
+      &::before,
+      &::after {
         width: 100%;
         height: 100%;
+    }
+  }
+}
+
+
+// styles specific to each project
+$keys: map-keys($primary-colors);
+@for $i from 1 through length($keys) {
+  $key: nth($keys, $i);
+  $value: map-get($primary-colors, $key);
+  
+  .project-container {
+    &:nth-of-type(#{$i}) {
+      &::after {
+        background-color: rgba($value, 0.15);
+      }
+      
+      &:hover {
+        .project-img-container {
+          box-shadow:
+          rgba($value, 0.35) 0px 10px 50px, // glow
+          rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, 
+          rgba(0, 0, 0, 0.1) 0px 4px 6px -2px,
+          rgba(0, 0, 0, 0.2) 10px 10px 70px 0px;
+        }
+      }
+      
+      .project-hr {
+        border-color: $value;
+      }
+  
+      .project-btn {
+        background-color: rgba($value, 0.1);
+        
+        &:hover {
+          background-color: transparent;
+        }
+
+        &::before {
+          border-top-color: $value;
+          border-left-color: $value;
+        }
+  
+        &::after {
+          border-bottom-color: $value;
+          border-right-color: $value;
+        }
+      }
+    }
+  }
+}
+
+.project-container {
+  &:nth-of-type(even) {
+    &::after {
+      top: 0;
+      right: unset;
+      left: 0;
+    }
+
+    .project-inner-container {
+      flex-flow: row-reverse;
+    }
+
+    .project-img-container {
+      position: relative;
+      left: -1rem;
+      right: -1rem;
     }
   }
 }
