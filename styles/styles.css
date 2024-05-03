@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap");
+body {
+  background-color: #fff8f8;
+  margin: 0;
+  padding: 0;
+}
+body * {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "ChelseaMarket";
+  src: url("../ChelseaMarket.ttf") format("truetype");
+}
+.navbar-container {
+  font-family: "Roboto Slab", serif;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 4rem;
+  background-color: rgba(226, 225, 225, 0.5019607843);
+  backdrop-filter: blur(1rem);
+  -webkit-backdrop-filter: blur(1rem);
+  top: 0;
+  left: 0;
+  padding: 0 1rem;
+  z-index: 50;
+}
+
+.intro-section {
+  height: 100vh;
+  background-color: #eee2e2;
+}
+
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10rem;
+  width: 100%;
+  padding: 6rem;
+}
+
+.projects-title {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 3rem;
+  color: black;
+  width: 100%;
+  text-align: left;
+}
+.projects-title::after {
+  position: absolute;
+  content: "";
+  width: 12rem;
+  height: 1.5rem;
+  background-color: #f9e374;
+  bottom: 0.25rem;
+  left: 0.75rem;
+  z-index: -1;
+}
+
+.project-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 22rem;
+  height: calc(100% - 4rem);
+  width: 100%;
+  max-width: 66rem;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 70px 0px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  z-index: 30;
+}
+.project-container::after {
+  content: "";
+  position: absolute;
+  width: 1.5rem;
+  height: 100%;
+  background-color: rgba(230, 221, 221, 0.3019607843);
+  top: 0;
+  right: 0;
+  transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+}
+.project-container:nth-of-type(even)::after {
+  top: 0;
+  right: unset;
+  left: 0;
+}
+.project-container:nth-of-type(even) .project-inner-container {
+  flex-flow: row-reverse;
+}
+.project-container:nth-of-type(even) .project-img-container {
+  position: relative;
+  left: -1rem;
+  right: -1rem;
+}
+.project-container:hover {
+  box-shadow: 10px 10px 100px 0px rgba(0, 0, 0, 0.3);
+  transition: all 300ms ease;
+}
+.project-container:hover .project-img-container {
+  transform: scale(1.02);
+  box-shadow: rgba(59, 175, 169, 0.35) 4px 4px, rgba(59, 175, 169, 0.3) 8px 8px, rgba(59, 175, 169, 0.2) 12px 12px, rgba(59, 175, 169, 0.1) 16px 16px, rgba(59, 175, 169, 0.05) 20px 20px;
+  transition: all 300ms ease;
+  z-index: 30;
+}
+.project-container:hover:nth-of-type(even) .project-img-container {
+  box-shadow: rgba(59, 175, 169, 0.35) -4px 4px, rgba(59, 175, 169, 0.3) -8px 8px, rgba(59, 175, 169, 0.2) -12px 12px, rgba(59, 175, 169, 0.1) -16px 16px, rgba(59, 175, 169, 0.05) -20px 20px;
+}
+.project-container:hover .project-img {
+  display: none;
+}
+.project-container:hover .project-img-gif {
+  display: block;
+}
+
+.project-inner-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 3rem;
+  height: calc(100% - 4rem);
+  margin-bottom: -2rem;
+}
+
+.project-img-container {
+  position: relative;
+  left: 1rem;
+  top: -4rem;
+  width: 33rem;
+  -webkit-box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
+  overflow: hidden;
+  transition: all 300ms ease;
+  z-index: 30;
+}
+
+.project-container:nth-of-type(even) .project-img-container {
+  -webkit-box-shadow: 10px 10px 30px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: -10px 10px 30px 0px rgba(0, 0, 0, 0.2);
+}
+
+.project-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.project-img-gif {
+  display: none;
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.project-title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+  height: fit-content;
+  max-width: 20rem;
+  min-width: 13rem;
+  z-index: 10;
+}
+
+.project-title {
+  font-family: "Roboto Slab", serif;
+  color: #434343;
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+}
+
+.project-hr {
+  border-top: 2px solid #e6dddd;
+  z-index: 10;
+}
+
+.project-details-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  z-index: 10;
+}
+
+.project-description {
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  font-size: 1rem;
+  padding: 0 0.5rem;
+}
+
+.project-technologies {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  color: #363636;
+  padding: 0 0.5rem;
+}
+
+.project-btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.project-btn {
+  position: relative;
+  font-family: "Roboto Slab", serif;
+  font-size: 1.2rem;
+  background-color: rgba(230, 221, 221, 0.3019607843);
+  width: 10rem;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: 300ms all ease;
+  -webkit-transition: 300ms all ease;
+  padding: 0.5rem 0;
+}
+.project-btn::after, .project-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40%;
+  height: 20%;
+  border: 2px solid #e6dddd;
+  transition: all 600ms ease;
+}
+.project-btn::after {
+  border-top-color: transparent;
+  border-left-color: transparent;
+  bottom: 0;
+  right: 0;
+}
+.project-btn::before {
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  top: 0;
+  left: 0;
+}
+.project-btn:hover {
+  background-color: transparent;
+}
+.project-btn:hover::after, .project-btn:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */
