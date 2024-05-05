@@ -4,11 +4,11 @@ import Projects from "./components/Projects";
 
 const App = () => {
   return (
-    <>
+    <div className="app-container">
       <Navbar />
       <Intro />
       <Projects />
-    </>
+    </div>
   )
 }
 
