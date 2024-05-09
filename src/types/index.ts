@@ -1,13 +1,17 @@
-type ProjectLinksType = {
-  github: string,
-  live: string
+export interface BaseProject {
+  title: string
+  baseImg: string
+  techUsed: string[]
+  links: {
+    github: string,
+  }
 }
 
-export type ProjectType = {
-  title: string,
-  baseImg: string,
-  hoverImg: string,
-  techUsed: string[],
-  description: string,
-  links: ProjectLinksType
+export interface ExtendedProject extends BaseProject {
+  hoverImg: string
+  description: string
+  links: {
+    github: string,
+    live: string
+  }
 }

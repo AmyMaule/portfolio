@@ -45,3 +45,25 @@ export const projectData = [
   }
 ];
 
+export const ongoingProjectData = [
+  {
+    title: "Chameleon Kitchen",
+    baseImg: "/chameleon-kitchen.png",
+    hoverImg: "/chameleon-kitchen.png",
+    techUsed: ["React", "TypeScript", "SCSS"],
+    description: "Coming soon",
+    links: {
+      github: "chameleon-kitchen",
+    }
+  },
+  {
+    title: "The Great Debate",
+    baseImg: "/chameleon-kitchen.png",
+    hoverImg: "/chameleon-kitchen.png",
+    techUsed: ["React","TypeScript", "SCSS"],
+    description: "Coming soon",
+    links: {
+      github: "chameleon-kitchen",
+    }
+  }
+];
