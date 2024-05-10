@@ -26,7 +26,7 @@ export const projectData = [
     baseImg: "/whats-for-dinner.png",
     hoverImg: "/whats-for-dinner.png",
     techUsed: ["HTML", "CSS", "JavaScript"],
-    description: "Coming soon",
+    description: "What's For Dinner uses the Spoonacular API to search for recipes using search parameters such as prep/cooking time, macronutrient contents, cuisines, special diets, or by ingredient. Search for recipes by title, or generate random recipes.",
     links: {
       github: "whats-for-dinner",
       live: "https://whats-for-dinner.pages.dev/"
@@ -37,7 +37,7 @@ export const projectData = [
     baseImg: "/reddit.png",
     hoverImg: "/reddit.png",
     techUsed: ["React", "SCSS"],
-    description: "Coming soon",
+    description: "SPA front end clone of reddit.com that fetches and displays posts using the Reddit API. Posts on the main homepage and each subtopic's homepage can be sorted by hot, new, top and rising. Click on a post to see post detail plus comments.",
     links: {
       github: "reddit",
       live: ""
@@ -64,6 +64,54 @@ export const ongoingProjectData = [
     description: "Coming soon",
     links: {
       github: "chameleon-kitchen",
+    }
+  }
+];
+
+export const browserGameData = [
+  {
+    title: "Space Invaders",
+    baseImg: "/space-invaders.png",
+    techUsed: ["HTML", "CSS", "JavaScript"],
+    links: {
+      github: "space-invaders",
+      live: ""
+    }
+  },
+  {
+    title: "Minesweeper",
+    baseImg: "/minesweeper.png",
+    techUsed: ["HTML", "CSS", "JavaScript"],
+    links: {
+      github: "minesweeper",
+      live: ""
+    }
+  },
+  {
+    title: "Game of Life",
+    baseImg: "/game-of-life.png",
+    techUsed: ["HTML", "CSS", "JavaScript"],
+    links: {
+      github: "game-of-life",
+      live: ""
+    }
+  },
+  {
+    title: "Tetris",
+    baseImg: "/tetris.png",
+    techUsed: ["HTML", "CSS", "JavaScript"],
+    links: {
+      github: "tetris-game",
+      live: ""
+    }
+  },
+  {
+    title: "Snake",
+    baseImg: "/snake.png",
+    techUsed: ["HTML", "CSS", "JavaScript"],
+    links: {
+      github: "snake-game",
+      live: ""
     }
   }
 ];

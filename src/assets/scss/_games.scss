@@ -1,0 +1,116 @@
+.games-section {
+  position: relative;
+  width: 100%;
+  padding: 6rem;
+  z-index: 5;
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 100%;
+  //   height: 100%;
+  //   background: url("123.png");
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+  //   top: 0;
+  //   left: 0;
+  //   z-index: -1;
+  // }
+}
+
+.games-subtitle {
+  font-family: "Montserrat", sans-serif;
+  align-self: flex-start;
+  font-weight: 400;
+  font-size: 1rem;
+  color: black;
+}
+
+.games-container {
+  max-width: 66rem;
+  margin: 0 auto;
+}
+
+.game-container {
+  position: relative;
+  width: 15rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0.25rem 1rem 0 rgba(0, 0, 0, 0.1), 0 0.3rem 1.5rem 0 rgba(0, 0, 0, 0.1);
+  // -webkit-box-shadow: 0.6rem 0.6rem 4.3rem 0 rgba(0, 0, 0, 0.15);
+  margin: 3rem auto;
+  padding-bottom: 1.5rem;
+  transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1.5rem;
+    background-color: #e6dddd;
+    bottom: 0;
+    right: left;
+  }
+
+  &:hover {
+    transform: scale(1.03);
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
+  }
+}
+
+.game-img {
+  width: 100%;
+  height: 10.5rem;
+  object-fit: cover;
+}
+
+.game-text-container {
+  padding: 1rem;
+}
+
+.game-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+// set colors specific to each game
+$keys: map-keys($game-colors);
+@for $i from 1 through length($keys) {
+  $key: nth($keys, $i);
+  $value: map-get($game-colors, $key);
+  
+  .slick-slide:nth-child(#{$i}) .game-container {
+    &::after {
+      background-color: rgba($value, 0.12);
+    }
+
+    .game-img {
+      box-shadow: 0 0.05rem 0.3rem #23232375;
+    }
+
+    .project-hr {
+      border-color: $value;
+    }
+
+    .project-btn {
+      background-color: rgba($value, 0.12);
+
+      &:hover {
+        background-color: transparent;
+      }
+
+      &::before {
+        border-top-color: $value;
+        border-left-color: $value;
+      }
+
+      &::after {
+        border-bottom-color: $value;
+        border-right-color: $value;
+      }
+    }
+  }
+}

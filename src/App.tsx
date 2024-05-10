@@ -1,3 +1,4 @@
+import Games from "./components/Games";
 import Intro from "./components/Intro";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
@@ -20,6 +21,7 @@ const App = () => {
         projectData={ongoingProjectData}
         title="Work in progress" 
       />
+      <Games />
     </div>
   )
 }

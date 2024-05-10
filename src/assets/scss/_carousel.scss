@@ -1,0 +1,11 @@
+.carousel-arrow {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  backdrop-filter: blur(0.5rem);
+  padding: 0.5rem;
+
+  &:nth-of-type(1) {
+    transform: rotateY(180deg);
+  }
+}
