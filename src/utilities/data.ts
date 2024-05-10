@@ -18,7 +18,7 @@ export const projectData = [
     description: "This fully responsive multi-page bakery e-commerce uses Contentful as a headless CMS and local storage to save your basket between visits.",
     links: {
       github: "vanilla-bean-bakery",
-      live: ""
+      live: "tbd"
     }
   },
   {
@@ -40,7 +40,7 @@ export const projectData = [
     description: "SPA front end clone of reddit.com that fetches and displays posts using the Reddit API. Posts on the main homepage and each subtopic's homepage can be sorted by hot, new, top and rising. Click on a post to see post detail plus comments.",
     links: {
       github: "reddit",
-      live: ""
+      live: "tbd"
     }
   }
 ];
@@ -54,6 +54,7 @@ export const ongoingProjectData = [
     description: "Coming soon",
     links: {
       github: "chameleon-kitchen",
+      live: "tbd"
     }
   },
   {
@@ -64,6 +65,7 @@ export const ongoingProjectData = [
     description: "Coming soon",
     links: {
       github: "chameleon-kitchen",
+      live: "tbd"
     }
   }
 ];
@@ -75,7 +77,6 @@ export const browserGameData = [
     techUsed: ["HTML", "CSS", "JavaScript"],
     links: {
       github: "space-invaders",
-      live: ""
     }
   },
   {
@@ -84,7 +85,6 @@ export const browserGameData = [
     techUsed: ["HTML", "CSS", "JavaScript"],
     links: {
       github: "minesweeper",
-      live: ""
     }
   },
   {
@@ -93,7 +93,6 @@ export const browserGameData = [
     techUsed: ["HTML", "CSS", "JavaScript"],
     links: {
       github: "game-of-life",
-      live: ""
     }
   },
   {
