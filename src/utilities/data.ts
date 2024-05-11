@@ -2,7 +2,7 @@ export const projectData = [
   {
     title: "ImmoBee",
     baseImg: "/immobee-1200.png",
-    hoverImg: "/immobee-gif-1200.gif",
+    hoverImg: "/immobee-1200.png",
     techUsed: ["React", "SCSS", "React Router"],
     description: "An open-source real estate app designed to streamline the process of searching for properties for sale in a particular region by aggregating real estate agent data from various sources into a single platform.",
     links: {
