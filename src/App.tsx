@@ -13,15 +13,19 @@ const App = () => {
     <div className="app-container">
       <Navbar />
       <Intro />
-      <Projects 
-        projectData={projectData}
-        title="Portfolio" 
-      />
-      <Projects
-        projectData={ongoingProjectData}
-        title="Work in progress" 
-      />
-      <Games />
+      <div className="projects-bg-container">
+        <Projects 
+          projectData={projectData}
+          title="Portfolio" 
+        />
+        <Projects
+          projectData={ongoingProjectData}
+          title="Work in progress" 
+        />
+        <Games />
+      </div>
+      {/* TO DO: small 'about me' section here */}
+      {/* TO DO: add footer */}
     </div>
   )
 }

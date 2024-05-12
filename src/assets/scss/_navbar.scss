@@ -3,9 +3,11 @@
   position: fixed;
   display: flex;
   align-items: center;
+  font-weight: 400;
+  color: rgb(99, 74, 74);
+  background-color: rgba(245, 237, 237, 0.6);
   width: 100%;
   height: 4rem;
-  background-color: rgba(245, 237, 237, 0.6);
   backdrop-filter: blur(1rem);
   -webkit-backdrop-filter: blur(1rem);
   top: 0;

@@ -1,10 +1,10 @@
 import Project from "./Project";
 
-import { ProjectType } from "../types";
+import { ExtendedProject } from "../types";
 
 type ProjectsProps = {
   title: string,
-  projectData: ProjectType[]
+  projectData: ExtendedProject[]
 }
 
 const Projects = ({ title, projectData }: ProjectsProps) => {
@@ -12,7 +12,7 @@ const Projects = ({ title, projectData }: ProjectsProps) => {
     <section className="projects-section">
     <h1 className="projects-title">{title}</h1>
       <>
-        {projectData.map((project: ProjectType) => {
+        {projectData.map((project: ExtendedProject) => {
           return <Project project={project} key={project.title} />
         })}
       </>
