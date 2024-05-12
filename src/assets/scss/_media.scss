@@ -1,0 +1,65 @@
+@media screen and (max-width: 950px) {
+  .intro-section {
+    flex-direction: column;
+    flex-flow: column-reverse;
+    height: unset;
+
+    &::after {
+      background-position: 50% 40%;
+    }
+  }
+
+  .intro-text-container {
+    width: 100%;
+  }
+
+  .intro-text {
+    font-size: 1.3rem;
+  }
+
+  .intro-img-container {
+    width: 100%;
+  }
+
+  .intro-img {
+    max-width: 18rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  // intro
+  .intro-section {
+    gap: 2.5rem;
+    padding: 2.5rem 2rem;
+  }
+
+  .intro-text {
+    font-size: 1.1rem;
+  }
+
+  .intro-img {
+    max-width: 15rem;
+  }
+
+  // projects
+  .projects-section {
+    padding: 2.5rem 2rem;
+  }
+
+  // games
+  .games-section {
+    padding: 2.5rem 2rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .intro-section {
+    padding: 2.5rem 1rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .intro-text {
+    text-align: center;
+  }
+}
