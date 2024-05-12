@@ -2,7 +2,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="navbar-container">
-        <h1>hello navbar</h1>
+        <h1>Amy Maule</h1>
       </nav>
       <div className="navbar-height" />
     </>

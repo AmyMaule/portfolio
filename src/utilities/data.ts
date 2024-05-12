@@ -15,7 +15,7 @@ export const projectData = [
     baseImg: "/vanilla-bean.png",
     hoverImg: "/vanilla-bean.png",
     techUsed: ["HTML", "CSS", "JavaScript"],
-    description: "This fully responsive multi-page bakery e-commerce uses Contentful as a headless CMS and local storage to save your basket between visits.",
+    description: "A fully responsive multi-page bakery e-commerce site that uses Contentful as a headless CMS, features robust sorting options for products and saves your basket between visits.",
     links: {
       github: "vanilla-bean-bakery",
       live: "tbd"
@@ -37,7 +37,7 @@ export const projectData = [
     baseImg: "/reddit.png",
     hoverImg: "/reddit.png",
     techUsed: ["React", "SCSS"],
-    description: "SPA front end clone of reddit.com that fetches and displays posts using the Reddit API. Posts on the main homepage and each subtopic's homepage can be sorted by hot, new, top and rising. Click on a post to see post detail plus comments.",
+    description: "SPA front end clone of reddit.com that fetches and displays posts using the Reddit API. Posts on the main homepage and each subreddit's homepage can be sorted by hot, new, top and rising. Click on a post to see post detail plus comments.",
     links: {
       github: "reddit",
       live: "tbd"
@@ -61,7 +61,7 @@ export const ongoingProjectData = [
     title: "The Great Debate",
     baseImg: "/chameleon-kitchen.png",
     hoverImg: "/chameleon-kitchen.png",
-    techUsed: ["React","TypeScript", "SCSS"],
+    techUsed: ["React","TypeScript", "SCSS", "Django",],
     description: "Coming soon",
     links: {
       github: "chameleon-kitchen",
