@@ -1,3 +1,10 @@
+@media screen and (max-width: 1050px) {
+  // games
+  .games-section {
+    padding: 6rem 2rem;
+  }
+}
+
 @media screen and (max-width: 950px) {
   .intro-section {
     flex-direction: column;
@@ -50,16 +57,57 @@
   .games-section {
     padding: 2.5rem 2rem;
   }
+  
+  .slick-prev {
+    left: 0 !important;
+  }
+  
+  .slick-next {
+    right: 0 !important;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  // games
+  .games-section {
+    padding: 2.5rem 0;
+
+    // remove padding from .games-section so that carousel can take up full width
+    // add padding back to title and subtitle but as margin to maintain ::after effect
+    .projects-title,
+    .games-subtitle {
+      margin: 0 2rem;
+    }
+  }  
 }
 
 @media screen and (max-width: 420px) {
   .intro-section {
     padding: 2.5rem 1rem;
   }
+
+  // projects
+  .projects-section {
+    padding: 2.5rem 1rem;
+  }
+
+  // games
+  .projects-title,
+  .games-subtitle {
+    margin: 0 1rem;
+  }
 }
 
 @media screen and (max-width: 370px) {
+  // intro
   .intro-text {
     text-align: center;
+  }
+
+  // games
+  .carousel-arrow {
+    width: 2rem;
+    height: 2rem;
+    padding: 0.25rem;
   }
 }
