@@ -4,8 +4,17 @@
   border-radius: 50%;
   backdrop-filter: blur(0.5rem);
   padding: 0.5rem;
+  z-index: 10;
 
   &:nth-of-type(1) {
-    transform: rotateY(180deg);
+    transform: translate(0, -50%) rotateY(180deg);
   }
+}
+
+.slick-prev {
+  left: -2rem !important;
+}
+
+.slick-next {
+  right: -2rem !important;
 }

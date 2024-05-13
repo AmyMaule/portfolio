@@ -28,6 +28,20 @@ const Games = () => {
     infinite: false,
     nextArrow: <CarouselArrow />,
     prevArrow: <CarouselArrow />,
+    responsive: [
+      {
+        breakpoint: 940,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 630,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ],
     slidesToScroll: 1,
     slidesToShow: 3
   };
