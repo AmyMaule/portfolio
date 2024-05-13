@@ -10,7 +10,7 @@ const Intro = () => {
         </p>
       </div>
       <div className="intro-img-container">
-        <img src="circle-amy.png" className="intro-img" />
+        <img src="images/circle-amy.png" className="intro-img" />
       </div>
     </section>
   )

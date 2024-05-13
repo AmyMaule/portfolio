@@ -18,7 +18,7 @@ const Games = () => {
       <img 
         className={`${className} carousel-arrow`}
         onClick={props.onClick}
-        src="/carousel-arrow.png"
+        src="images/carousel-arrow.png"
       />
     );
   }
