@@ -1,12 +1,12 @@
-import Games from "./components/Games";
-import Intro from "./components/Intro";
-import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
+import Games from "./Games";
+import Intro from "./Intro";
+import Navbar from "./Navbar";
+import Projects from "./Projects";
 
 import { 
   ongoingProjectData,
   projectData
-} from "./utilities/data";
+} from "../utilities/data";
 
 const App = () => {
   return (
@@ -20,7 +20,7 @@ const App = () => {
         />
         <Projects
           projectData={ongoingProjectData}
-          title="Work in progress" 
+          title={`Work \nin progress`} 
         />
         <Games />
       </div>
