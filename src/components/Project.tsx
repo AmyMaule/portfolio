@@ -16,9 +16,7 @@ const Project = ({ project }: {project: ExtendedProject }) => {
           projectType="project"
         />
       </div>
-      <div className="project-details-container">
-        <p className="project-description">{project.description}</p>
-      </div>
+      <p className="project-description">{project.description}</p>
     </div>
   )
 }
