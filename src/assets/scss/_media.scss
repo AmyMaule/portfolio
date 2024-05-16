@@ -85,6 +85,13 @@
 }
 
 @media screen and (max-width: 900px) {
+  .projects-bg-container {  
+    &::after {
+      background: url("/images/projects-bg-tablet.png");
+      background-size: contain;
+    }
+  }
+
   .projects-container {
     margin: 9rem 0 0 0;
   }
