@@ -29,8 +29,24 @@ const ProjectLinks = ({ project, projectType, liveSite }: ProjectLinksProps) => 
       })}
     </div>
     <div className={`${projectType}-btn-container`}>
-      <button className="project-btn">Github</button>
-      {liveSite && <button className="project-btn">View site</button>}
+      <a
+        className="project-btn"
+        href={`https://github.com/AmyMaule/${project.links.github}`}
+        rel="noreferrer"
+        target="_blank"
+      >
+        Github
+      </a>
+      {liveSite && 
+        <a
+          className="project-btn"
+          href={liveSite}
+          rel="noreferrer"
+          target="_blank"
+        >
+          View site
+        </a>
+      }
     </div>
   </div>
   )

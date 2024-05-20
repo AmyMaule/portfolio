@@ -1,10 +1,10 @@
 export const projectData = [
   {
     title: "ImmoBee",
-    baseImg: "/images/project-images/immobee-1200.png",
-    hoverImg: "/images/project-images/immobee-1200.png",
+    baseImg: "/images/project-images/immobee.png",
+    hoverImg: "/images/project-images/immobee.png",
     techUsed: ["React", "SCSS", "React Router"],
-    description: "An open-source real estate app designed to streamline the process of searching for properties for sale in a particular region by aggregating real estate agent data from various sources into a single platform.",
+    description: "An open-source real estate app designed to streamline the process of searching for properties for sale in particular areas by aggregating real estate agent data from various sources into a single platform.",
     links: {
       github: "real-estate-immobee",
       live: "https://immobee.app"
@@ -18,7 +18,7 @@ export const projectData = [
     description: "A fully responsive multi-page bakery e-commerce site that uses Contentful as a headless CMS, features robust sorting options for products and saves your basket between visits.",
     links: {
       github: "vanilla-bean-bakery",
-      live: "tbd"
+      live: "https://vanilla-bean-bakery.pages.dev/"
     }
   },
   {
@@ -37,10 +37,10 @@ export const projectData = [
     baseImg: "/images/project-images/reddit.png",
     hoverImg: "/images/project-images/reddit.png",
     techUsed: ["React", "SCSS"],
-    description: "SPA front end clone of reddit.com that fetches and displays posts using the Reddit API. Posts on the main homepage and each subreddit's homepage can be sorted by hot, new, top and rising. Click on a post to see post detail plus comments.",
+    description: "SPA front end clone of reddit.com from 2021 that fetches and displays posts using the Reddit API. Posts on the main homepage and each subreddit's homepage can be sorted by hot, new, top and rising. Post page shows post detail plus comments.",
     links: {
       github: "reddit",
-      live: "tbd"
+      live: "https://amy-reddit.pages.dev/"
     }
   }
 ];
@@ -51,21 +51,21 @@ export const ongoingProjectData = [
     baseImg: "/images/project-images/chameleon-kitchen.png",
     hoverImg: "/images/project-images/chameleon-kitchen.png",
     techUsed: ["React", "TypeScript", "SCSS"],
-    description: "Coming soon",
+    description: "An open-source ingredient converter designed to make finding recipes more accessible for everyone. Simply paste a recipe into the box to have your recipe parsed and converted into your desired units. Development still ongoing.",
     links: {
       github: "chameleon-kitchen",
-      live: "tbd"
+      live: "https://chameleon-kitchen.pages.dev/"
     }
   },
   {
     title: "The Great Debate",
-    baseImg: "/images/project-images/chameleon-kitchen.png",
-    hoverImg: "/images/project-images/chameleon-kitchen.png",
-    techUsed: ["React","TypeScript", "SCSS", "Django",],
-    description: "Coming soon",
+    baseImg: "/images/project-images/great-debate.png",
+    hoverImg: "/images/project-images/great-debate.png",
+    techUsed: ["React", "TypeScript", "SCSS", "Django",],
+    description: "Answer some of life's biggest (and least serious) questions and see how many others responded in the same way. Responses are saved to an sqlite database using Django, with votes counted only once per IP. Development still ongoing.",
     links: {
-      github: "chameleon-kitchen",
-      live: "tbd"
+      github: "the-great-debate",
+      live: ""
     }
   }
 ];
@@ -77,14 +77,7 @@ export const browserGameData = [
     techUsed: ["HTML", "CSS", "JavaScript"],
     links: {
       github: "space-invaders",
-    }
-  },
-  {
-    title: "Minesweeper",
-    baseImg: "/images/project-images/minesweeper.png",
-    techUsed: ["HTML", "CSS", "JavaScript"],
-    links: {
-      github: "minesweeper",
+      // live: "https://amy-spaceinvaders.netlify.app/"
     }
   },
   {
@@ -93,6 +86,7 @@ export const browserGameData = [
     techUsed: ["HTML", "CSS", "JavaScript"],
     links: {
       github: "game-of-life",
+      // live: "https://amy-gameoflife.netlify.app/"
     }
   },
   {
@@ -101,7 +95,15 @@ export const browserGameData = [
     techUsed: ["HTML", "CSS", "JavaScript"],
     links: {
       github: "tetris-game",
-      live: ""
+    }
+  },
+  {
+    title: "Minesweeper",
+    baseImg: "/images/project-images/minesweeper.png",
+    techUsed: ["HTML", "CSS", "JavaScript"],
+    links: {
+      github: "minesweeper",
+      // live: "https://amy-minesweeper.netlify.app/"
     }
   },
   {
@@ -110,7 +112,6 @@ export const browserGameData = [
     techUsed: ["HTML", "CSS", "JavaScript"],
     links: {
       github: "snake-game",
-      live: ""
     }
   }
 ];
