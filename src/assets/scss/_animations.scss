@@ -12,9 +12,11 @@
 @-webkit-keyframes slide-up-left {
   0% {
     top: 3rem;
+    left: -2rem;
   }
   100% {
     top: 0;
+    left: 0;
   }
 }
 
@@ -33,6 +35,51 @@
   0% {
     top: 3rem;
     right: -2rem;
+  }
+  100% {
+    top: 0;
+    right: 0;
+  }
+}
+
+// mobile versions for screens with smaller padding
+@keyframes slide-up-left-mobile {
+  0% {
+    top: 3rem;
+    left: -1rem;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+@-webkit-keyframes slide-up-left-mobile {
+  0% {
+    top: 3rem;
+    left: -1rem;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes slide-up-right-mobile {
+  0% {
+    top: 3rem;
+    right: -1rem;
+  }
+  100% {
+    top: 0;
+    right: 0;
+  }
+}
+
+@-webkit-keyframes slide-up-right-mobile {
+  0% {
+    top: 3rem;
+    right: -1rem;
   }
   100% {
     top: 0;

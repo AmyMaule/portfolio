@@ -45,6 +45,7 @@
   .intro-section {
     flex-direction: column;
     flex-flow: column-reverse;
+    min-height: calc(100vh - 6rem);
     height: unset;
 
     &::after {
@@ -213,7 +214,7 @@
 @media screen and (max-width: 630px) {
   // intro
   .intro-section {
-    gap: 2.5rem;
+    gap: 3rem;
     padding: 2.5rem 2rem;
   }
 
@@ -351,12 +352,33 @@
 
 @media screen and (max-width: 420px) {
   .intro-section {
+    gap: 2rem;
     padding: 2.5rem 1rem;
   }
 
   // projects
   .projects-section {
     padding: 2.5rem 1rem;
+  }
+
+  .project-container {
+    &:nth-child(odd) {
+      left: -1rem;
+  
+      &.animate {
+        animation: slide-up-left-mobile 300ms forwards;
+        -webkit-animation: slide-up-left-mobile 300ms forwards;
+      }
+    }
+  
+    &:nth-child(even) {
+      right: 0;
+  
+      &.animate {
+        animation: slide-up-right-mobile 300ms forwards;
+        -webkit-animation: slide-up-right-mobile 300ms forwards;
+      }
+    }
   }
 
   // games
