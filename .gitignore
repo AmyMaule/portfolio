@@ -17,3 +17,6 @@ dist-ssr
 
 # Vite directories
 .vite
+
+# Development directories
+design
