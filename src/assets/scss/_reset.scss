@@ -15,14 +15,14 @@ h1, h2, h3, h4, h5, h6, p {
 
 .app-container {
   position: relative;
-  background: url("app-bg.jpg");
+  background: url("/images/app-bg.jpg");
   background-repeat: repeat-y;
   background-size: contain;
 
   &::after {
     content: "";
     position: absolute;
-    background-color: rgba(245, 237, 237, 0.75);
+    background-color: rgba(245, 237, 237, 0.8);
     width: 100%;
     min-height: 100%;
     top: 0;
