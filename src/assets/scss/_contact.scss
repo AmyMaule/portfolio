@@ -1,0 +1,95 @@
+.contact-section {
+  position: relative;
+  width: 100%;
+  min-height: 28rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  padding: 6rem;
+  z-index: 5;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: rgba(248, 240, 240, 0.7);
+  border-radius: 0.25rem;
+  box-shadow: 
+    rgba(150, 150, 161, 0.15) 0 0.5rem 1.25rem 0, 
+    rgba(150, 150, 161, 0.05) -0.02rem -0.2rem 0.2rem 0;
+  max-width: 62rem;
+  margin: 3rem auto 0 auto;
+  padding: 1rem;
+
+  &.fade-out {
+    animation: contact-fade-out 0.5s forwards;
+    -webkit-animation: contact-fade-out 0.5s forwards;
+  }
+}
+
+.contact-inputs-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.contact-input {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.1rem;
+  background-color: transparent;
+  width: 100%;
+  min-height: 2.5rem;
+  border: none;
+  border-bottom: 3px solid #e0e0e0;
+  resize: none;
+  outline: none;
+  padding: 0.3rem;
+  cursor: pointer;
+  transition: 300ms ease all;
+  -webkit-transition: 300ms ease all;
+
+  &:hover {
+    border-color: #cedaeb;
+    transition: 300ms ease all;
+    -webkit-transition: 300ms ease all;
+  }
+
+  &:focus {
+    border-color: #abc4e3;
+    transition: 300ms ease all;
+    -webkit-transition: 300ms ease all;
+  }
+}
+
+.contact-textarea {
+  height: 9rem;
+}
+
+.contact-success-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 28rem;
+}
+
+.contact-success {
+  position: relative;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+  color: $color-text;
+  text-align: center;
+  white-space: pre-wrap;
+  opacity: 0;
+  top: 7rem;
+  animation: contact-slide-up 0.5s 0.5s forwards;
+  -webkit-animation: contact-slide-up 0.5s 0.5s forwards;
+}
+
+.contact-error {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  font-size: 1.1rem;
+  color: $color-text;
+  text-align: center;
+  margin-top: 2rem;
+}

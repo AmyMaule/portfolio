@@ -11,7 +11,6 @@
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  padding: 0;
   transition: 300ms all ease;
   -webkit-transition: 300ms all ease;
   padding: 0.5rem 0;
@@ -23,7 +22,7 @@
       position: absolute;
       width: 40%;
       height: 20%;
-      border: 0.15rem solid #e6dddd;
+      border: 0.15rem solid #abc4e3;
       transition: all 500ms ease;
       -webkit-transition: all 500ms ease;
     }
@@ -56,4 +55,12 @@
     background-color: #e6dddd4d;
     color: black;
   }
+}
+
+.btn-contact-submit {
+  font-size: 1.3rem;
+  width: fit-content;
+  background-color: #edecee;
+  margin: 0 auto;
+  padding: 0.5rem 3rem;
 }

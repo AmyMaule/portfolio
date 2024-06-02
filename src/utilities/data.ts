@@ -62,7 +62,7 @@ export const ongoingProjectData = [
     baseImg: "/images/project-images/great-debate.png",
     hoverImg: "/images/project-images/great-debate.png",
     techUsed: ["React", "TypeScript", "SCSS", "Django",],
-    description: "Answer some of life's biggest (and least serious) questions and see how many others responded in the same way. Responses are saved to an sqlite database using Django, with votes counted only once per IP. Development still ongoing.",
+    description: "Answer some of life's biggest (and least serious) questions and see how many others responded in the same way. Responses are saved to a sqlite database using Django, with votes counted only once per IP. Development still ongoing.",
     links: {
       github: "the-great-debate",
       live: ""
