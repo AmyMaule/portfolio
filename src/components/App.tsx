@@ -1,5 +1,6 @@
 import Contact from "./Contact";
 import Games from "./Games";
+import Footer from "./Footer";
 import Intro from "./Intro";
 import Navbar from "./Navbar";
 import Projects from "./Projects";
@@ -24,9 +25,9 @@ const App = () => {
           title={`Work \nin progress`} 
         />
         <Games />
-      {/* TO DO: small 'about me' section here */}
-      {/* TO DO: add footer */}
+        {/* TO DO: small 'about me' section here */}
         <Contact />
+        <Footer />
       </div>
     </div>
   )
