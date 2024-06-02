@@ -86,3 +86,44 @@
     right: 0;
   }
 }
+
+// Contact section
+@keyframes contact-slide-up {
+  0% {
+    top: 7rem;
+    opacity: 0;
+  }
+  100% {
+    top: -2rem;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes contact-slide-up {
+  0% {
+    top: 7rem;
+    opacity: 0;
+  }
+  100% {
+    top: -2rem;
+    opacity: 1;
+  }
+}
+
+@keyframes contact-fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes contact-fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

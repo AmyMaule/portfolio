@@ -9,9 +9,14 @@
 
 // components
 @import "buttons";
+@import "contact";
 @import "games";
 @import "intro";
 @import "projects";
 
 // media queries
 @import "media";
+
+.hide {
+  display: none;
+}

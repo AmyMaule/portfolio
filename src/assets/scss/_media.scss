@@ -83,6 +83,11 @@
   .games-subtitle {
     margin: 0 2rem;
   }
+
+  // contact
+  .contact-section {
+    padding: 4rem;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -211,6 +216,13 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+  // contact
+  .contact-inputs-container {
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 630px) {
   // intro
   .intro-section {
@@ -268,7 +280,7 @@
     margin: 1rem 0 0 0;
   }
 
-  .project-btn {
+  .project-btn:not(.btn-contact-submit) {
     font-size: 1.1rem;
     padding: 0.6rem 0;
   }
@@ -298,6 +310,15 @@
   
   .slick-next {
     right: 0 !important;
+  }
+
+  // contact
+  .contact-section {
+    padding: 2.5rem 2rem;
+  }
+
+  .contact-form {
+    margin: 1.5rem auto 0 auto;
   }
 }
 
@@ -385,6 +406,11 @@
   .games-title,
   .games-subtitle {
     margin: 0 1rem;
+  }
+
+  // contact
+  .contact-section {
+    padding: 2.5rem 1rem;
   }
 }
 
