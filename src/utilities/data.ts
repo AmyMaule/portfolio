@@ -10,6 +10,17 @@ export const projectData = [
       live: "https://immobee.app"
     }
   },
+    {
+    title: "VOflix",
+    baseImg: "/images/project-images/voflix.png",
+    hoverImg: "/images/project-images/voflix.png",
+    techUsed: ["React", "SCSS", "React Router"],
+    description: "A web app that simplifies searching for non-dubbed English-language movies showing in a particular region in France by combining showing data from multiple cinemas into a single, easy-to-use website.",
+    links: {
+      github: "VOflix",
+      live: "https://voflix.org"
+    }
+  },
   {
     title: "The Vanilla Bean Bakery",
     baseImg: "/images/project-images/vanilla-bean.png",
