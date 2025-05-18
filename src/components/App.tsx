@@ -1,3 +1,4 @@
+import About from "./About";
 import Contact from "./Contact";
 import Games from "./Games";
 import Footer from "./Footer";
@@ -25,7 +26,7 @@ const App = () => {
           title={`Work \nin progress`} 
         />
         <Games />
-        {/* TO DO: small 'about me' section here */}
+        <About />
         <Contact />
         <Footer />
       </div>

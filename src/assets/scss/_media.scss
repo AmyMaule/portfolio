@@ -27,16 +27,20 @@
     }
   }
   
-  // games
-  .games-section {
+  // games, about
+  .games-section,
+  .about-section {
     padding: 6rem 2rem;
   }
 
   // remove padding from .games-section so that carousel can have increased width
   // add left/right padding back to title+subtitle but as margin to maintain ::after effect
-  .games-title,
-  .games-subtitle {
+  .games-title {
     margin: 0 4rem;
+  }
+  
+  .games-subtitle {
+    margin: 2rem 4rem 0 4rem;
   }
 }
 
@@ -74,14 +78,18 @@
     padding: 4rem;
   }
 
-  // games
-  .games-section {
+  // games, about
+  .games-section,
+  .about-section {
     padding: 4rem 2rem;
   }
 
-  .games-title,
-  .games-subtitle {
+  .games-title {
     margin: 0 2rem;
+  }
+
+  .games-subtitle {
+    margin: 2rem 2rem 0 2rem;
   }
 
   // contact
@@ -214,6 +222,21 @@
     justify-content: space-around;
     gap: 1rem;
   }
+
+  // about
+  .about-text,
+  .rc-container {
+    font-size: 1.1rem;
+  }
+
+  .about-img-container,
+  .about-img-row {
+    gap: 1.5rem;
+  }
+
+  .about-img {
+    height: 11rem;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -243,7 +266,7 @@
     padding: 2.5rem 2rem;
   }
   
-  .projects-title {
+  .section-title {
     font-size: 2.5rem;
 
     &::after {
@@ -289,8 +312,9 @@
     font-size: 1rem;
   }
 
-  // games
-  .games-section {
+  // games, about
+  .games-section,
+  .about-section {
     padding: 2.5rem 2rem;
   }
 
@@ -300,8 +324,8 @@
   }
 
   .games-subtitle {
-    font-size: 1rem;
-    margin: 0;
+    font-size: 1.1rem;
+    margin: 1rem 0 0 0;
   }
   
   .slick-prev {
@@ -312,13 +336,36 @@
     right: 0 !important;
   }
 
+  // about
+  .about-text-container {
+    margin: 1rem 0 0 0;
+  }
+  // Flatten the rows so all images become direct children
+  .about-img-row {
+    display: contents;
+  }
+
   // contact
   .contact-section {
     padding: 2.5rem 2rem;
   }
+  
+  .contact-subtitle {
+    margin: 1rem 0 0 0;
+  }
 
   .contact-form {
     margin: 1.5rem auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .rc-container {
+    margin: 0 -2rem;
+  }
+
+  .rc-scout {
+    padding: 0.5rem;
   }
 }
 
@@ -376,6 +423,20 @@
   .games-subtitle {
     margin: 0 2rem;
   }
+
+  // about
+  .about-section {
+    padding: 2.5rem 2rem;
+  }
+
+  .about-img-container,
+  .about-img-row {
+    gap: 1rem;
+  }
+
+  .about-img {
+    height: 9rem;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -385,7 +446,8 @@
   }
 
   // projects
-  .projects-section {
+  .projects-section,
+  .about-section {
     padding: 2.5rem 1rem;
   }
 
@@ -415,6 +477,13 @@
     margin: 0 1rem;
   }
 
+  // about
+  .rc-container {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 0 -0.75rem;
+  }
+
   // contact
   .contact-section {
     padding: 2.5rem 1rem;
@@ -434,7 +503,7 @@
   }
 
   // projects
-  .projects-title {
+  .section-title {
     line-height: 0.9;
     white-space: pre-wrap;
 
@@ -473,5 +542,11 @@
     width: 2rem;
     height: 2rem;
     padding: 0.25rem;
+  }
+
+  // about
+  .about-img {
+    height: unset;
+    width: 55%;
   }
 }

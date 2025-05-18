@@ -1,4 +1,5 @@
-.games-section {
+.games-section,
+.about-section {
   position: relative;
   width: 100%;
   padding: 6rem;
@@ -6,11 +7,12 @@
 }
 
 .games-subtitle {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto Slab", serif;
   align-self: flex-start;
-  font-weight: 400;
-  font-size: 1.1rem;
-  color: black;
+  font-weight: 300;
+  font-size: 1.25rem;
+  color: $color-text;
+  margin-top: 2rem;
 }
 
 .games-container {

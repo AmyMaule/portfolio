@@ -49,7 +49,7 @@ const Games = () => {
   return (
     <section className="games-section">
       <h1 className="games-title">Games</h1>
-      <p className="games-subtitle">Here are some small browser games I had fun working on, all written in HTML CSS/SCSS and vanilla JS.</p>
+      <p className="games-subtitle">Here are some small browser games I had fun working on, all written in HTML, CSS/SCSS and vanilla JS.</p>
       <div className="games-container">
         <Slider {...settings}>
           {browserGameData.map((game, i) => {

@@ -45,7 +45,17 @@ const Contact = () => {
 
   return (
     <section className="contact-section" id="contact">
-      <h1 className="projects-title">Get in touch</h1>
+      <h1 className="section-title">Get in touch</h1>
+        <div className="contact-subtitle">
+          <a 
+            href="https://www.linkedin.com/in/amymaule/"
+            className="contact-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Message me on LinkedIn
+          </a>, or fill out the form below!
+        </div>
         <form  className="contact-form" name="contact" onSubmit={handleSubmit} ref={contactFormRef}>
           <div className="contact-inputs-container">
             <input
