@@ -8,6 +8,24 @@
   z-index: 5;
 }
 
+.contact-subtitle {
+  font-family: "Roboto Slab", serif;
+  color: $color-text;
+  margin-top: 2rem;
+}
+
+.contact-link {
+  color: $color-text;
+  transition: 200ms ease all;
+  -webkit-transition: 200ms ease all;
+  
+  &:hover {
+    color: black;
+    transition: 200ms ease all;
+    -webkit-transition: 200ms ease all;
+  }
+}
+
 .contact-form {
   display: flex;
   flex-direction: column;

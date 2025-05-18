@@ -22,6 +22,17 @@ export const projectData = [
     }
   },
   {
+  title: "Chameleon Kitchen",
+  baseImg: "/images/project-images/chameleon-kitchen.png",
+  hoverImg: "/images/project-images/chameleon-kitchen.png",
+  techUsed: ["React", "TypeScript", "SCSS"],
+  description: "An open-source ingredient converter designed to make finding recipes more accessible for everyone. Simply paste a recipe into the box to have your recipe parsed and converted into your desired units. Development still ongoing.",
+  links: {
+    github: "chameleon-kitchen",
+    live: "https://chameleon-kitchen.pages.dev/"
+  }
+},
+  {
     title: "The Vanilla Bean Bakery",
     baseImg: "/images/project-images/vanilla-bean.png",
     hoverImg: "/images/project-images/vanilla-bean.png",
@@ -57,17 +68,6 @@ export const projectData = [
 ];
 
 export const ongoingProjectData = [
-  {
-    title: "Chameleon Kitchen",
-    baseImg: "/images/project-images/chameleon-kitchen.png",
-    hoverImg: "/images/project-images/chameleon-kitchen.png",
-    techUsed: ["React", "TypeScript", "SCSS"],
-    description: "An open-source ingredient converter designed to make finding recipes more accessible for everyone. Simply paste a recipe into the box to have your recipe parsed and converted into your desired units. Development still ongoing.",
-    links: {
-      github: "chameleon-kitchen",
-      live: "https://chameleon-kitchen.pages.dev/"
-    }
-  },
   {
     title: "The Great Debate",
     baseImg: "/images/project-images/great-debate.png",
