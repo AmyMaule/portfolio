@@ -247,6 +247,25 @@
 }
 
 @media screen and (max-width: 630px) {
+  // navabr
+  .navbar-title {
+    font-size: 1.5rem;
+    letter-spacing: -0.04rem;
+  }
+
+  .navbar-link {
+    font-size: 1.1rem;
+    letter-spacing: -0.04rem;
+  }
+
+  // the 3 navbar items
+  #portfolio,
+  #about,
+  #contact {
+    scroll-margin-top: 2rem;
+  }
+  
+
   // intro
   .intro-section {
     gap: 3rem;
@@ -360,6 +379,7 @@
 }
 
 @media screen and (max-width: 470px) {
+  // about
   .rc-container {
     margin: 0 -2rem;
   }
@@ -440,6 +460,20 @@
 }
 
 @media screen and (max-width: 420px) {
+  // navbar
+  .navbar-title {
+    letter-spacing: -0.04rem;
+    font-size: 1rem;
+  }
+
+  .navbar-links {
+    gap: 0.8rem;
+  }
+
+  .navbar-link {
+    font-size: 1rem;
+  }
+
   .intro-section {
     gap: 2rem;
     padding: 2.5rem 1rem;
