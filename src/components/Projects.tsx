@@ -9,7 +9,7 @@ type ProjectsProps = {
 
 const Projects = ({ title, projectData }: ProjectsProps) => {
   return (
-    <section className="projects-section">
+    <section className="projects-section" id={title.toLowerCase()}>
       <h1 className="section-title">{title}</h1>
       <div className="projects-container">
         {projectData.map((project: ExtendedProject) => {

@@ -3,7 +3,7 @@ const Intro = () => {
     <section className="intro-section">
       <div className="intro-text-container">
         <p className="intro-text">
-          Hello! I'm Amy, a full stack developer with a passion for building meaningful digital experiences. I have a knack for problem-solving and thrive on turning ideas into intuitive, user-friendly interfaces.
+          Hello! I'm Amy, a frontend / full stack developer with a passion for building meaningful digital experiences. I have a knack for problem-solving and thrive on turning ideas into intuitive, user-friendly interfaces.
         </p>
         <p className="intro-text">
           I'm currently seeking a new opportunity where I can apply my problem-solving skills, collaborate with talented peers, and contribute to exciting and impactful projects.
